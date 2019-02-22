@@ -34,13 +34,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Both are meant to utilize breakpoints designed for desktop, tablet, mobile and other screen sizes. With adaptive design, much of the layout will still be hardcoded pixels. With responsive design, on the other hand, we make use of responsive units so that the layout adjusts nicely for different screen sizes.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+These are different approaches to designing the look of your site with the user experience in mind. With desktop first design, you create a site that looks how you want it for a desktop, and then reconfigure those elements using breakpoints as the screen shrinks. In this case you would use media queries with the max-width parameter. For mobile first devleopmenet, on the other hand, you design your site to look good on a phone (typically this means all sections stacked) and then use min-width media queries to expand out the content as you go up in screen size toward desktop.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+The browser default for text is usually 16px, so setting our font-size to 62.5% rem globally means our default font-size will be 10px, a nice round number to base the sizing of our other fonts like h1 and h2 tags on.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessing gives adds some simple but powerful new syntax features for you, such as nesting elements inside each other, and also offers a few other goodies like variables, as you would see in other coding languages. In short, it allows you to write your code in a much more efficient and readable manner, and the preprocessor will do the work of spitting out a normal css file for you.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+I think parametric mixins can be extremely valuable as I continue to get comfortable with using them. As for challenges, I continue to get a bit tripped up some times keeping track of my element nesting, putting things where they shouldn't be in the nesting order.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
