@@ -11,17 +11,27 @@
     background-color: @nav-bg;
     padding: 20px;
 
+    @media @phone {
+        background-color: red;
+      }
+
     h1 {
         font-size: 4rem;
         margin-bottom: 20px;
     }
 
     nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
         a {
             text-decoration: none;
             font-size: 2rem;
             color: black;
-            padding: 10px 20px;
+            padding: 10px 10px;
         }
+        @media @phone {
+            // width: 500px;
+          }
     }
 }

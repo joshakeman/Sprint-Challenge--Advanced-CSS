@@ -180,15 +180,27 @@ p {
   background-color: #F6F6F6;
   padding: 20px;
 }
+@media (max-width: 500px) {
+  .nav-wrapper {
+    background-color: red;
+  }
+}
 .nav-wrapper h1 {
   font-size: 4rem;
   margin-bottom: 20px;
+}
+.nav-wrapper nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .nav-wrapper nav a {
   text-decoration: none;
   font-size: 2rem;
   color: black;
-  padding: 10px 20px;
+  padding: 10px 10px;
+}
+@media (max-width: 500px) {
 }
 footer {
   color: #22283B;
