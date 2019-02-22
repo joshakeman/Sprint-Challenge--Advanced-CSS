@@ -1,10 +1,3 @@
-.flex-column {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
 .full-image {
   border-radius: 5px;
   width: 100%;
@@ -180,11 +173,6 @@ p {
   background-color: #F6F6F6;
   padding: 20px;
 }
-@media (max-width: 500px) {
-  .nav-wrapper {
-    background-color: red;
-  }
-}
 .nav-wrapper h1 {
   font-size: 4rem;
   margin-bottom: 20px;
@@ -249,8 +237,24 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .home .walk {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 20px;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+    padding: 20px;
+  }
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
@@ -279,6 +283,13 @@ footer {
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    border-radius: 5px;
+    width: 100%;
+    margin: 0;
+  }
 }
 .home .walk .walk-img img {
   width: 100%;

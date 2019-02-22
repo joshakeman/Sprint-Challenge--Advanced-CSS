@@ -50,8 +50,18 @@
     display: flex;
     justify-content: center;
 
+    @media @phone {
+      .flex-column(column-reverse);
+      padding: 20px;
+    }
+
     .walk-text {
       width: 50%;
+
+      @media @phone {
+        width: 100%;
+        padding: 20px;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -73,6 +83,11 @@
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @phone {
+        .full-image();
+        margin: 0;
+      }
       
       img {
         width: 100%;

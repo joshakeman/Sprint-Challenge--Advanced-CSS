@@ -9,11 +9,11 @@
     border-radius: 5px;
 }
 
-.flex-column {
+.flex-column (@direction) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: @direction;
     align-items: center;
 }
 
