@@ -170,7 +170,15 @@ p {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
+  position: fixed;
+  /* Set the navbar to fixed position */
+  top: 0;
+  /* Position the navbar at the top of the page */
+  width: 100%;
+  /* Full width */
   background-color: #F6F6F6;
+  opacity: 0.9;
   padding: 20px;
 }
 .nav-wrapper h1 {
@@ -199,6 +207,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home {
+  margin-top: 140px;
 }
 .home .intro h2 {
   padding: 15px;
@@ -285,7 +296,7 @@ footer {
   margin-bottom: 26px;
 }
 .home .walk .walk-text .btn {
-  width: 30%;
+  width: 120px;
   text-align: center;
   background-color: black;
   padding: 10px 20px;
@@ -300,7 +311,7 @@ footer {
   }
 }
 .home .walk .walk-text .btn:hover {
-  width: 30%;
+  width: 120px;
   text-align: center;
   background-color: white;
   padding: 10px 20px;
