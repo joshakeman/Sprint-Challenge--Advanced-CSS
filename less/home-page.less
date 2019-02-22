@@ -13,8 +13,7 @@
     }
 
     img {
-      border-radius: 5px;
-      width: 100%;
+      .full-image();
     }
   
   }
@@ -63,7 +62,11 @@
       }
 
       .btn {
-        .custom-btn;
+        .custom-btn(black, white);
+
+        &:hover {
+          .custom-btn(white, black);
+        }
       }
     }
 

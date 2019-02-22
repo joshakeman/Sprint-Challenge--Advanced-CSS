@@ -1,10 +1,23 @@
 // Mixins Here
-.custom-btn () {
+.custom-btn (@bg, @txt-color) {
     width: 30%;
     text-align: center;
-    background-color: #000;
+    background-color: @bg;
     padding: 10px 20px;
     font-size: 1.75rem;
-    color: white;
-    border-radius: 5px
+    color: @txt-color;
+    border-radius: 5px;
+}
+
+.flex-column {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.full-image {
+    border-radius: 5px;
+    width: 100%;
 }
