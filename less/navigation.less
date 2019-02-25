@@ -1,1 +1,38 @@
 // Navigation code here
+
+.nav-wrapper {
+    .flex-column(column);
+    
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+
+    background-color: @nav-bg;
+    opacity: 0.9;
+    // background: rgb(246,246,246,0.9);
+    padding: 20px;
+
+    @media @phone {
+      }
+
+    h1 {
+        font-size: 4rem;
+        margin-bottom: 20px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        a {
+            text-decoration: none;
+            font-size: 2rem;
+            color: black;
+            padding: 10px 10px;
+        }
+        @media @phone {
+            // width: 500px;
+          }
+    }
+}
